@@ -1,19 +1,19 @@
-# Hamisah Social Auto Reply v1.0
+# Hamisah Social Auto Reply v1.1
 
 Starter aplikasi Instagram + Facebook.
 
-Jalankan:
+## V1.1 deployment fix
+- Updated Next.js from 15.5.6 to 15.5.9.
+- Pins the Vercel build to Node.js 20.
+- Uses the standard `npm run build` command.
+- No Meta credentials are included.
+
+## Run
 `npm install`
 `npm run dev`
 
-Build:
-`npm run build`
-
-Salin `.env.example` menjadi `.env.local`.
-
-Dashboard sudah memiliki Campaign, Product Library, Demo Mode, Activity, Analytics, Settings, serta halaman koneksi Instagram/Facebook.
+## Vercel
+Import the GitHub repository and deploy. Do not add Meta secrets yet.
 
 Webhook:
 `/api/webhooks/meta`
-
-Webhook di atas adalah endpoint awal untuk konfigurasi Meta. Sebelum produksi, tambahkan validasi event, idempotency comment_id, permission, token, dan pengiriman pesan menggunakan endpoint resmi Meta versi terbaru. Jangan gunakan password/cookie akun.
